@@ -7,10 +7,9 @@ For short description of available commands, run `vcpkg help`.
 
 ## Quick Start
 Prerequisites:
-- Visual Studio 2015 Update 3 or
-- Visual Studio 2017
+- Visual Studio 2017 or Visual Studio 2015 Update 3
+- Git
 - CMake 3.8.0 or higher (note: downloaded automatically if not found)
-- `git.exe` available in your path
 
 Clone this repository, then run
 ```
@@ -24,12 +23,14 @@ Install any packages with
 ```
 C:\src\vcpkg> .\vcpkg install sdl2 curl
 ```
-Finally, create a New Project (or open an existing one) in Visual Studio 2015 or Visual Studio 2017. You can now `#include` and use any of the installed libraries.
+Finally, create a New Project (or open an existing one) in Visual Studio 2017 or 2015. All installed libraries are immediately ready to be `#include`'d and used in your project.
+
+For CMake projects, simply include our toolchain file. See our [using a package](docs/example-using-sqlite.md) example for the specifics.
 
 ## Examples
-See the [`docs\EXAMPLES.md`](docs/EXAMPLES.md) document for specific walkthroughs, including using a package and adding a new package.
+See the [documentation](docs/readme.md) for specific walkthroughs, including [using a package](docs/example-using-sqlite.md) and [adding a new package](docs/example-packaging-zlib.md).
 
-See a 4 minute [demo in video](https://www.youtube.com/watch?v=y41WFKbQFTw).
+See a 4 minute [video demo](https://www.youtube.com/watch?v=y41WFKbQFTw).
 
 ## Contributing
 Vcpkg is built with your contributions. Here are some ways you can contribute:
