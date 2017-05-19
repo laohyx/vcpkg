@@ -15,7 +15,7 @@ Finally, if the server's name for the archive is not very descriptive (such as d
 
 All this information can then be passed into the `create` command, which will download the sources and bootstrap the packaging process inside `ports\<packagename>`.
 
-```
+```no-highlight
 PS D:\src\vcpkg> .\vcpkg create zlib2 http://zlib.net/zlib128.zip zlib128.zip
 -- Generated portfile: D:/src/vcpkg/ports/zlib2/portfile.cmake
 ```
@@ -24,7 +24,7 @@ PS D:\src\vcpkg> .\vcpkg create zlib2 http://zlib.net/zlib128.zip zlib128.zip
 In addition to the generated `ports\<package>\portfile.cmake`, we also need a `ports\<package>\CONTROL` file. This file is a simply formatted set of fields describing the package's metadata.
 
 *For zlib2, we'll create the file `ports\zlib2\CONTROL` with the following contents:*
-```
+```no-highlight
 Source: zlib2
 Version: 1.2.8
 Description: A Massively Spiffy Yet Delicately Unobtrusive Compression Library
@@ -33,7 +33,7 @@ Description: A Massively Spiffy Yet Delicately Unobtrusive Compression Library
 ### Tweak the generated portfile
 The generated `portfile.cmake` will need some editing to correctly package most libraries in the wild, however we can start by trying out the build.
 
-```
+```no-highlight
 PS D:\src\vcpkg> .\vcpkg build zlib2
 -- CURRENT_INSTALLED_DIR=D:/src/vcpkg/installed/x86-windows
 -- DOWNLOADS=D:/src/vcpkg/downloads

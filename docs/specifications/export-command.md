@@ -52,7 +52,7 @@ From a user experience perspective, the user expresses interest in exporting a p
 Developer Bob needs gtest and cpprestsdk and has been manually building them and their dependencies, then using the binaries in his project via applocal deployment. Bob has been experimenting with `vcpkg` and wants to use `vcpkg` for the building part only.
 
 Bob tries to export the libraries:
-```
+```no-highlight
 > vcpkg export gtest cpprestsdk --zip
 The following packages are already built and will be exported:
   * boost:x86-windows
@@ -70,14 +70,14 @@ To build them, run:
 ```
 
 Bob proceeds to install the missing libraries:
-```
+```no-highlight
 > vcpkg install gtest:x86-windows
 // -- omitted build information -- //
 Package gtest:x86-windows is installed.
 ```
 
 Bob then returns to export the libraries:
-```
+```no-highlight
 > vcpkg export gtest cpprestsdk --zip
 The following packages are already built and will be exported:
   * boost:x86-windows
@@ -111,7 +111,7 @@ Bob takes the zip file and extracts the contents next to his other dependencies.
 
 ### ii. User has a vcpkg root that works and wants to share it
 Developer Alice has been using `vcpkg` and has a Visual Studio project that consumes libraries from it (via `vcpkg integrate`). The project is built for both 32-bit and 64-bit architectures. Alice wants to quickly share the dependencies with Bob so he can test the project.
-```
+```no-highlight
 > vcpkg export gtest zlib gtest:x64-windows zlib:x64-windows --nuget
 The following packages are already built and will be exported:
     gtest:x86-windows
@@ -135,7 +135,7 @@ Alice gives to Bob: a) The link to her project and b) The NuGet package "vcpkg-e
 
 ### iii. User has a vcpkg root that works and wants to share it #2
 Developer Alice has been using `vcpkg` and has a CMake project that consumes libraries from it (via CMake toolchain file). Alice wants to quickly share the dependencies with Bob so he can test the project.
-```
+```no-highlight
 > vcpkg export cpprestsdk zlib --zip
 The following packages are already built and will be exported:
   * boost:x86-windows

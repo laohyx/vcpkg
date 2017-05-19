@@ -18,7 +18,7 @@ This field should be an alphanumeric string which may also contain `.`, `_`, or 
 By convention, if a portfile is modified without incrementing the "upstream" version, a `-#` is appended to create a unique version string.
 
 Example:
-```
+```no-highlight
 Version: 1.0.5-2
 ```
 
@@ -34,7 +34,7 @@ Reserved for future use.
 The list of dependencies required to build and use this library.
 
 Example:
-```
+```no-highlight
 Build-Depends: zlib, libpng, libjpeg-turbo, tiff
 ```
 
@@ -45,7 +45,7 @@ Unlike dpkg, Vcpkg does not distinguish between build-only dependencies and runt
 Dependencies can be filtered based on the target triplet to support different requirements on Windows Desktop versus the Universal Windows Platform. Currently, the string inside brackets is substring-compared against the triplet name. __This will change in a future version to not depend on the triplet name.__
 
 Example:
-```
+```no-highlight
 Build-Depends: zlib [windows], openssl [windows], boost [windows], websocketpp [windows]
 ```
 

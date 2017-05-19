@@ -11,7 +11,7 @@ Vcpkg offers many ways to integrate into your build so you can do what's right f
 These link your project(s) to a specific copy of Vcpkg on your machine so any updates or new package installations will be instantly available for the next build of your project.
 
 #### User-wide for MSBuild (Recommended for Open Source MSBuild projects)
-```
+```no-highlight
 vcpkg integrate install
 ```
 This will implicitly add Include Directories, Link Directories, and Link Libraries for all packages installed with Vcpkg to all VS2015 and VS2017 MSBuild projects. We also add a post-build action for executable projects that will analyze and copy any DLLs you need to the output folder, enabling a seamless F5 experience.
@@ -27,7 +27,7 @@ Here are some examples, though this is not an exhaustive list:
 To get a full list for all your installed packages, run `vcpkg owns manual-link`.
 
 #### CMake toolchain file (Recommended for Open Source CMake projects)
-```
+```no-highlight
 cmake ../my/project -DCMAKE_TOOLCHAIN_FILE=C:\vcpkg\scripts\buildsystems\vcpkg.cmake
 ```
 Projects configured with the Vcpkg toolchain file will have the appropriate Vcpkg folders added to the cmake search paths. This makes all libraries available to be found through `find_package()`, `find_path()`, and `find_library()`.
@@ -44,7 +44,7 @@ include_directories(${CATCH_INCLUDE_DIR})
 #### Linking NuGet file
 
 We also provide individual VS project integration through a NuGet package. This will modify the project file, so we do not recommend this approach for open source projects.
-```
+```no-highlight
 PS D:\src\vcpkg> .\vcpkg integrate project
 Created nupkg: D:\src\vcpkg\scripts\buildsystems\vcpkg.D.src.vcpkg.1.0.0.nupkg
 

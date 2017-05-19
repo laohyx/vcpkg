@@ -10,7 +10,7 @@
 ## Step 1: Install
 
 First, we need to know what name [Sqlite](https://sqlite.org) goes by in the ports tree. To do that, we'll run the `search` command and inspect the output:
-```
+```no-highlight
 PS D:\src\vcpkg> .\vcpkg search sqlite
 libodb-sqlite        2.4.0            Sqlite support for the ODB ORM library
 sqlite3              3.15.0           SQLite is a software library that implements a se...
@@ -21,7 +21,7 @@ If your library is not listed, please open an issue at:
 Looking at the list, we can see that the port is named "sqlite3". You can also run the `search` command without arguments to see the full list of packages.
 
 Installing is then as simple as using the `install` command.
-```
+```no-highlight
 PS D:\src\vcpkg> .\vcpkg install sqlite3
 -- CURRENT_INSTALLED_DIR=D:/src/vcpkg/installed/x86-windows
 -- DOWNLOADS=D:/src/vcpkg/downloads
@@ -52,13 +52,13 @@ Package sqlite3:x86-windows is installed
 ```
 
 We can check that sqlite3 was successfully installed for x86 windows desktop by running the `list` command.
-```
+```no-highlight
 PS D:\src\vcpkg> .\vcpkg list
 sqlite3:x86-windows         3.15.0           SQLite is a software library that implements a se...
 ```
 
 To install for other architectures and platforms such as Universal Windows Platform or x64 Desktop, you can suffix the package name with `:<target>`.
-```
+```no-highlight
 PS D:\src\vcpkg> .\vcpkg install sqlite3:x86-uwp zlib:x64-windows
 ```
 
@@ -71,7 +71,7 @@ See `.\vcpkg help triplet` for all supported targets.
 #### VS/MSBuild Project (User-wide integration)
 
 The recommended and most productive way to use vcpkg is via user-wide integration, making the system available for all projects you build. The user-wide integration will prompt for administrator access the first time it is used on a given machine, but afterwords is no longer required and the integration is configured on a per-user basis.
-```
+```no-highlight
 PS D:\src\vcpkg> .\vcpkg integrate install
 Applied user-wide integration for this vcpkg root.
 
@@ -133,7 +133,7 @@ int main()
 ```
 
 Then, we build our project in the normal CMake way:
-```
+```no-highlight
 PS D:\src\cmake-test> mkdir build 
 PS D:\src\cmake-test> cd build
 PS D:\src\cmake-test\build> cmake .. "-DCMAKE_TOOLCHAIN_FILE=D:\src\vcpkg\scripts\buildsystems\vcpkg.cmake"
