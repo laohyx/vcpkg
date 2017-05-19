@@ -1,16 +1,14 @@
-# Documentation
-
 ### Quick Start
 
 Vcpkg helps you get C and C++ libraries on Windows. This tool and ecosystem are currently in a preview state; your involvement is vital to its success.
 
-- [How to use Sqlite in your application](example-using-sqlite.md)
+- [How to use Sqlite in your application](examples/using-sqlite.md)
 
 ### Examples
 
-- [Example 1: Using Sqlite](example-using-sqlite.md)
-- [Example 2: Packaging zlib](example-packaging-zlib.md)
-- [Example 3: Patching libpng to work for x86-uwp](example-patching-libpng.md)
+- [Example 1: Using Sqlite](examples/using-sqlite.md)
+- [Example 2: Packaging zlib](examples/packaging-zlib.md)
+- [Example 3: Patching libpng for x86-uwp](examples/patching-libpng.md)
 
 ### User Help
 
@@ -18,15 +16,12 @@ Vcpkg helps you get C and C++ libraries on Windows. This tool and ecosystem are 
 
 ### Maintainer help
 
-- [Control files](control-files.md)
-#### Portfile functions
-{% include commands.md %}
-<!-- Command help can be found in the cmake\ subdirectory -->
-<!-- Run regenerate.ps1 to extract documentation from scripts\cmake\*.cmake -->
+- [Control files](maintainers/control-files.md)
+- [CMake helper scripts](maintainers/cmake-helpers.md)
 
 ### Specifications
 
-- [Export](spec-export.md)
+- [Export](specifications/export-command.md)
 
 ### Blog posts
 

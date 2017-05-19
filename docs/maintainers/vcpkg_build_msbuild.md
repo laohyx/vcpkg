@@ -54,3 +54,6 @@ Additional options passed to msbuild for Debug builds. These are in addition to 
 
 * [libuv](https://github.com/Microsoft/vcpkg/blob/master/ports/libuv/portfile.cmake)
 * [zeromq](https://github.com/Microsoft/vcpkg/blob/master/ports/zeromq/portfile.cmake)
+
+### Source
+[https://github.com/Microsoft/vcpkg/blob/master/scripts/cmake/vcpkg_build_msbuild.cmake]()

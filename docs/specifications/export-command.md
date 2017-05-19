@@ -17,7 +17,7 @@ Libraries like [Qt][] can take a very long time to build (5+ hours). Therefore, 
 
 ### C. Flexibility and uses without `vcpkg`
 
-`vcpkg` currently handles cases where you have a `vcpkg` enlistment on your machine and use it for acquiring libraries and integrating into Visual Studio, CMake etc. However, users need the ability to build the libraries and then use them outside of and indepdently of `vcpkg`. For example:
+`vcpkg` currently handles cases where you have a `vcpkg` enlistment on your machine and use it for acquiring libraries and integrating into Visual Studio, CMake etc. However, users need the ability to build the libraries and then use them outside of and independently of `vcpkg`. For example:
 - Use `vcpkg` for the build, then host the binaries in a website (similarly to nuget)
 - Use `vcpkg` for the build, then put the binaries in an installer and distribute the installer
 

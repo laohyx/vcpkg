@@ -5,7 +5,7 @@ Fields are case-sensitive.
 
 [debian]: https://www.debian.org/doc/debian-policy/ch-controlfields.html
 
-### Recognized fields:
+### Recognized fields
 
 #### Source
 The name of the port.

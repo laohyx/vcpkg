@@ -28,7 +28,7 @@ A stable git commit-ish (ideally a tag) that will not change contents.
 If `REF` is specified, `SHA512` must also be specified.
 
 #### `SHA512`
-The SHA512 hash that matches the downloaded archive.
+The SHA512 hash that should match the archive (https://github.com/${REPO}/archive/${REF}.tar.gz).
 
 This is most easily determined by first setting it to `1`, then trying to build the port. The error message will contain the full hash, which can be copied back into the portfile.
 
@@ -47,3 +47,6 @@ This exports the `VCPKG_HEAD_VERSION` variable during head builds.
 * [cpprestsdk](https://github.com/Microsoft/vcpkg/blob/master/ports/cpprestsdk/portfile.cmake)
 * [ms-gsl](https://github.com/Microsoft/vcpkg/blob/master/ports/ms-gsl/portfile.cmake)
 * [beast](https://github.com/Microsoft/vcpkg/blob/master/ports/beast/portfile.cmake)
+
+### Source
+[https://github.com/Microsoft/vcpkg/blob/master/scripts/cmake/vcpkg_from_github.cmake]()

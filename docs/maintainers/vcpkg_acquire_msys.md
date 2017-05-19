@@ -42,3 +42,6 @@ vcpkg_execute_required_process(
 * [ffmpeg](https://github.com/Microsoft/vcpkg/blob/master/ports/ffmpeg/portfile.cmake)
 * [icu](https://github.com/Microsoft/vcpkg/blob/master/ports/icu/portfile.cmake)
 * [libvpx](https://github.com/Microsoft/vcpkg/blob/master/ports/libvpx/portfile.cmake)
+
+### Source
+[https://github.com/Microsoft/vcpkg/blob/master/scripts/cmake/vcpkg_acquire_msys.cmake]()

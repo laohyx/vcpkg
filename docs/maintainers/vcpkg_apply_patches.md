@@ -30,3 +30,6 @@ This should only be used for edge cases, such as patches that are known to fail 
 * [boost](https://github.com/Microsoft/vcpkg/blob/master/ports/boost/portfile.cmake)
 * [freetype](https://github.com/Microsoft/vcpkg/blob/master/ports/freetype/portfile.cmake)
 * [libpng](https://github.com/Microsoft/vcpkg/blob/master/ports/libpng/portfile.cmake)
+
+### Source
+[https://github.com/Microsoft/vcpkg/blob/master/scripts/cmake/vcpkg_apply_patches.cmake]()
